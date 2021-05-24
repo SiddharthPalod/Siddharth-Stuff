@@ -1,5 +1,7 @@
-Hidden=15 
-g=9 #guesses left 
+import random
+Hidden=random.randint(1,100)
+g=10 #guesses left
+print("The no is b/w 1 to 100") 
 while g>0:
     a=int(input("Enter your number "))
     if a>Hidden:

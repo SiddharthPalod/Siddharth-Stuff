@@ -1,4 +1,5 @@
 n=int(input("How many lines: "))
+print("1=asending order, 0=desending order")
 a=int(input("1 or 0: "))
 m=n-n+1
 
