@@ -1,0 +1,150 @@
+
+// Data structures : List no = [1.2.3]; Map user = {"name":23, "dds": "ddsaa"}; 
+  // void greet(){
+  //   print("object");
+  // }
+
+class MyApp extends StatelessWidget{
+  MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold( //Stores the main page <App>
+        backgroundColor: Colors.white,
+        // appBar: AppBar( //Inbuild Header <Header/>
+        //   title: Text("This is the navbar"),
+        //   leading: Icon(Icons.menu),
+        //   elevation: 0,
+        //   actions: [
+        //     IconButton(onPressed: (){}, icon: Icon(Icons.close))
+        //   ],
+        //   backgroundColor: Colors.lightBlueAccent,
+        // ),
+
+        // body: Center( //Center aligns every component
+        //   child: Container( //Creates a div
+        //     height: 300,
+        //     width: 200,
+        //     padding: EdgeInsets.all(20),
+        //     decoration: BoxDecoration(
+        //       color: Colors.blueAccent,
+        //       borderRadius: BorderRadius.circular(20),
+        //     ),
+        //     // child: Text("Ram is here", //we can add text via this
+        //     //   style: TextStyle(
+        //     //     color: Colors.white,
+        //     //     fontSize: 20,
+        //     //   ),
+        //     // ),
+        //     child: Icon(
+        //       Icons.snapchat,
+        //       size: 100.0,
+        //       color: Colors.white,
+        //     )
+        //   )
+        // )
+
+        // body: Center(
+        //   // child: GestureDetector( //detects gesture
+        //   //   onTap: (){
+        //   //   },
+        //   child: Container(
+        //     height: 200,
+        //     width: 200,
+        //     color: Colors.blueAccent,
+        //     child: Center(child: Text("tap me!")),
+        //   )
+        //   )
+        //   )
+
+        // body: Column(  //flex-col -Column flex-row -Row
+        //   // crossAxisAlignment: CrossAxisAlignment.end, //flex-end types
+        //   children: [
+        //     Expanded(
+        //       flex: 2, //twice as big as others so cannot be double !!!
+        //       child:  //set Dimensions as h-1/2 etc for dynamic viewing
+        //       Container(
+        //         color: Colors.grey,
+        //       ),
+        //     ),
+        //     Expanded(child: 
+        //       Container(
+        //         color: Colors.grey[400],
+        //       ),
+        //     ),
+        //     Expanded(child: 
+        //       Container(
+        //         color: Colors.grey[200],
+        //       ),
+        //     ),
+          // Container( //Without tailwind h-1/2 stuff
+          //   height: 200,
+          //   width: 10,
+          //   color: Colors.grey,
+          // ),
+          // Container(
+          //   height: 200,
+          //   width: 20,
+          //   color: Colors.grey[400], //contrast
+          // ),
+          // Container(
+          //   height: 200,
+          //   width: 30,
+          //   color: Colors.grey[200],
+          // ),
+        // ],
+
+        // body: ListView(  //Scrollable cannot use expanded now as Height not fixed
+        //   // scrollDirection: Axis.horizontal,//Makes scroll horizontal
+        //   children: [
+        //       Container(
+        //         height: 350,
+        //         color: Colors.grey,
+        //       ),
+        //       Container(
+        //         height: 350,
+        //         color: Colors.grey[400],
+        //       ),
+        //       Container(
+        //         height: 350,
+        //         color: Colors.grey[200],
+        //       ),
+        //   ]
+        // ),
+
+        // body: Stack( //By default add onTopleft all divs on top of each other
+        //   // alignment: Alignment.bottomCenter,change alignment
+        //   children: [
+        //     Container(
+        //       height: 200,
+        //       width: 200,
+        //       color: Colors.black12,
+        //     ),
+        //     Container(
+        //       height: 100,
+        //       width: 100,
+        //       color: Colors.purple[400],
+        //     ),
+        //   ], //Display Grids 
+        // ),
+
+        // body: GridView.builder( //Display Grids 
+        //   itemCount: 50,
+        //   gridDelegate:  //how many grid in each row
+        //     SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
+        //   itemBuilder: (context,index) =>Container(
+        //     color: Colors.black12,
+        //     margin: EdgeInsets.all(2),
+        //   ),
+        // ),
+
+        // body: ListView.builder( //Display lists 
+        //   itemCount: 100,
+        //   itemBuilder: (context,index) => ListTile(
+        //     title: Text((index+1).toString()), //Mapping for dynamic building
+        //   ) 
+        // ),
+      ),
+    );
+  }  
+}
